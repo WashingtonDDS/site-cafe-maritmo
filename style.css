@@ -1,0 +1,213 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.secao-principal {
+  background-image: url("../images/bibi-pace-YXZMR45b8Wc-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  z-index: 1;
+}
+.secao-principal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.secao-principal h1,
+.sobre-texto h2 {
+  font-family: "Playfair Display", serif;
+}
+
+.secao-principal h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+.secao-principal p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #a47551;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+.botao:hover {
+  background-color: #8a6240;
+}
+
+/* Estilos da seção Sobre Nós */
+.secao-sobre {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.sobre-imagem,
+.sobre-texto {
+  width: 50%;
+}
+
+.sobre-imagem {
+  background-image: url("../images/caroline-badran-bMKifXw1ih4-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.sobre-texto {
+  padding: 40px 60px;
+  box-sizing: border-box;
+}
+
+.sobre-texto h2 {
+  font-size: 2.8em;
+  margin-top: 0;
+  color: #333;
+}
+
+.sobre-texto p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #555;
+}
+
+.secao-principal {
+  position: relative;
+  padding-bottom: 150px;
+}
+
+.secao-principal::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3e%3cpath fill='%23ffffff' fill-opacity='1' d='M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,138.7C672,128,768,160,864,186.7C960,213,1056,235,1152,218.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3e%3c/path%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .secao-principal h1 {
+    font-size: 2.5em;
+  }
+
+  .sobre-texto h2 {
+    font-size: 2em;
+  }
+
+  .secao-sobre {
+    flex-direction: column;
+  }
+
+  .sobre-imagem,
+  .sobre-texto {
+    width: 100%;
+  }
+
+  .sobre-imagem {
+    height: 300px;
+  }
+
+  .sobre-texto {
+    padding: 40px 20px;
+  }
+}
+.secao-cardapio {
+  padding: 80px 20px;
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.secao-cardapio h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8em;
+  color: #333;
+}
+
+.subtitulo-cardapio {
+  font-size: 1.2em;
+  color: #777;
+  margin-bottom: 50px;
+}
+
+.grid-cardapio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.item-cardapio img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item-cardapio h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em;
+  color: #333;
+  margin-top: 15px;
+}
+
+.item-cardapio p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.secao-contato {
+  background-color: #2b2b2b;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.secao-contato h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+.secao-contato p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .grid-cardapio {
+    grid-template-columns: 1fr;
+  }
+}
