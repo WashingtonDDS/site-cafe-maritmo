@@ -4,7 +4,7 @@ Bem-vindo ao projeto de demonstração da landing page para o "Café Maritmo", u
 
 **➡️ [Clique aqui para ver o site ao vivo!](https://<seu-username>.github.io/site-cafe-maritmo/)**
 
-![Screenshot do site Café Maritmo](assets/images/screenshot.jpg)
+![Screenshot do site Café Maritmo](images/screenshot.jpg)
 _(Dica: Tire um print bonito da sua página finalizada, salve como `screenshot.jpg` e suba para a pasta `assets/images`)_
 
 ---
